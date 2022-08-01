@@ -1,0 +1,546 @@
+:root {
+  --text-color: white;
+  --main-theme-color: #0c1027;
+  --secondary-theme-color: #12193e;
+  --border-radius: 50%;
+}
+
+/* Background color*/
+body {
+  background-color: var(--main-theme-color);
+  counter-reset: Serial;
+}
+
+/*main*/
+main {
+  width: 70%;
+  display: inline-block;
+}
+
+/* Music Player Name*/
+.navbar-brand {
+  position: relative;
+  left: 1%;
+}
+
+/*form styles*/
+form {
+  width: 400px;
+}
+
+/*form-input styles*/
+form input {
+  background-color: var(--secondary-theme-color) !important;
+  border: 0px !important;
+  height: 35px;
+}
+
+form input:focus {
+  background-color: skyblue !important;
+}
+
+::placeholder {
+  padding-left: 40px;
+}
+
+/*mic styles*/
+.search-mic {
+  position: relative;
+  right: 80px;
+  border: 0px;
+}
+
+/*search-button*/
+.search-icon {
+  position: relative;
+  right: 82%;
+  border: 0px;
+}
+
+/*notification styles*/
+.notification {
+  background-color: var(--main-theme-color);
+  border: 0px;
+  right: 4%;
+}
+
+.notification i {
+  font-size: 1.2rem;
+}
+
+.notification-dot {
+  left: 27px !important;
+}
+
+/*Corousel*/
+
+.carousel {
+  margin: 40px;
+  width: 90%;
+}
+
+.carousel-inner {
+  height: 100% !important;
+}
+
+/*Courousel-button*/
+.pg2-card-button {
+  background-image: linear-gradient(to right, #3d26b2, #a340d4);
+  width: 150px;
+  height: 40px;
+  color: var(--text-color);
+  border-radius: 0px;
+}
+
+.corousel-body-text {
+  color: #898c9f;
+}
+
+.corousel-white-text {
+  color: #f0f1f3;
+}
+
+.follow-button {
+  background-color: var(--secondary-theme-color);
+  border: 0px;
+  font-size: 0.9rem;
+}
+
+.follow-button:hover {
+  background-color: var(--secondary-theme-color);
+}
+
+.no-of-followers {
+  color: #898c9f;
+  font-size: 0.9rem;
+  word-break: break-all;
+  display: inline-block;
+  margin-left: 60%;
+}
+
+/* Music List*/
+.cards-ol {
+  width: 90%;
+  margin-left: 35px;
+  list-style-type: none;
+}
+
+.cards-ol .card {
+  border-radius: 0px;
+}
+
+/*SL No of Music List*/
+.aside-image-div-first9::before {
+  counter-increment: Serial;
+  content: "0" counter(Serial);
+  position: relative;
+  left: 7px;
+  top: 3px;
+  color: grey;
+  font-size: 0.8rem;
+  word-spacing: 0.1rem;
+}
+
+.aside-image-div::before {
+  counter-increment: Serial;
+  content: counter(Serial);
+  position: relative;
+  left: 7px;
+  top: 3px;
+  color: grey;
+  font-size: 0.8rem;
+  word-spacing: 0.1rem;
+}
+
+.aside-image-div-second::before {
+  content: "";
+  background: url("https://drive.google.com/uc?export=view&id=1HVeuEsb7hScIuusmKk8FsL8Nyy_tNo2I");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block !important;
+  margin: 20px 0px 0px 0px;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.cards-ol .card-body {
+  margin-left: -160px;
+}
+
+.heart-btn-page2 {
+  margin-left: 315%;
+  margin-top: 15px;
+}
+
+.time {
+  right: 120px;
+  align-self: center;
+}
+
+.card-row {
+  background-color: #202439;
+}
+
+.card {
+  border: 0px;
+}
+
+.card-text-genere {
+  position: relative;
+  opacity: 0.9;
+  left: 40px;
+  top: 10px;
+}
+
+/*Footer*/
+footer > div {
+  position: fixed;
+  bottom: 0px;
+  flex-wrap: wrap;
+}
+
+.music-player {
+  background-color: #282729;
+  height: 70px;
+}
+
+.progress-before::before {
+  content: "4:44";
+  color: grey;
+  right: 32.3%;
+  position: absolute;
+  margin-top: -5px;
+}
+
+.progress-before::after {
+  content: "1:39";
+  color: grey;
+  text-align: start;
+  position: absolute;
+  left: 32.2%;
+  margin-top: -5px;
+}
+
+.volume-div {
+  position: relative;
+  left: 5%;
+}
+
+.sound-bar {
+  position: absolute;
+  top: 32px;
+  margin-left: 30%;
+}
+
+.progress-circle {
+  position: absolute;
+  margin-left: 7%;
+  top: 40px;
+}
+
+.sound-circle {
+  position: absolute;
+  top: 27px;
+  font-size: 0.9rem;
+  margin-left: 35%;
+}
+
+.comp-speakers {
+  position: absolute;
+  top: 24px;
+  margin-left: 17%;
+}
+
+.fa-shuffle {
+  position: absolute;
+  top: 10px;
+  left: 43%;
+  font-size: 1rem;
+}
+
+.fa-backward-step {
+  position: absolute;
+  top: 10px;
+  left: 46%;
+  font-size: 1rem;
+}
+
+.fa-circle-pause {
+  position: absolute;
+  top: 5px;
+  left: 49%;
+  font-size: 1.7rem;
+}
+
+.fa-forward-step {
+  position: absolute;
+  top: 10px;
+  right: 46%;
+  font: 1rem;
+}
+
+.fa-repeat {
+  position: absolute;
+  top: 10px;
+  right: 43%;
+  font-size: 1rem;
+}
+
+.fa-list-music {
+  position: absolute;
+  top: 1px;
+  left: 10%;
+}
+
+.fa-list-check {
+  position: absolute;
+  top: 30px;
+  margin-left: 10%;
+}
+
+.fa-volume-high {
+  position: absolute;
+  top: 30px;
+  margin-left: 25%;
+  font-size: 0.8rem;
+}
+
+.fa-up-right-and-down-left-from-center {
+  position: absolute;
+  top: 30px;
+  margin-left: 58%;
+  font-size: 0.8rem;
+}
+
+/*Aside section*/
+aside {
+  width: 30%;
+  display: inline-block;
+  position: fixed;
+  top: 8%;
+  bottom: 0;
+  overflow-y: scroll;
+  margin-left: 0%;
+  margin-top: 2%;
+  vertical-align: top;
+}
+
+/*Hide scrollbar for chrome*/
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+aside {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.aside-dropdown-menu {
+  height: 85px;
+}
+
+.aside-dropdown-menu li {
+  margin-left: 20px;
+  height: 15px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.aside-card-image {
+  box-shadow: 2px 2px 10px lightblue;
+}
+
+.fa-heart {
+  font-size: 1rem;
+  color: grey;
+}
+
+.view {
+  margin-left: 115px;
+}
+
+.view:hover {
+  background-color: lightblue;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li .card {
+  background-color: var(--main-theme-color);
+}
+
+aside ol li .card {
+  background-color: var(--main-theme-color);
+  margin-left: 10px;
+}
+
+.ellipse::after {
+  content: "4:44";
+  font-size: 0.8rem;
+  color: grey;
+}
+
+@media screen and (max-width: 670px) {
+  .corousel-inner {
+    height: 100% !important;
+  }
+
+  .cards-ol .card-body {
+    margin-left: -10px;
+  }
+
+  .heart-btn-page2 {
+    right: 130px;
+    bottom: 30px;
+  }
+
+  .view {
+    margin-left: -20px !important;
+  }
+
+  .comp-speakers {
+    position: absolute;
+    top: 24px;
+    margin-left: 17%;
+  }
+
+  .fa-shuffle {
+    position: absolute;
+    top: 30px;
+    left: 39%;
+    font-size: 1rem;
+  }
+
+  .fa-backward-step {
+    position: absolute;
+    top: 30px;
+    left: 46%;
+    font-size: 1rem;
+  }
+
+  .fa-circle-pause {
+    position: absolute;
+    top: 25px;
+    left: 53%;
+    font-size: 1.5rem;
+  }
+
+  .fa-forward-step {
+    position: absolute;
+    top: 30px;
+    right: 35%;
+    font: 1rem;
+  }
+
+  .fa-repeat {
+    position: absolute;
+    top: 30px;
+    right: 28%;
+    font-size: 1rem;
+  }
+
+  .fa-volume-high {
+    position: absolute;
+    top: 30px;
+    margin-left: 25%;
+    font-size: 0.8rem;
+  }
+}
+
+/*media-query for entire-page*/
+@media screen and (max-width: 1000px) {
+  form input {
+    width: 900px !important;
+  }
+
+  .search-icon {
+    right: 330px !important;
+  }
+
+  .notification {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .profile-image {
+    margin-top: 10px;
+  }
+
+  .nav-item {
+    margin-left: 0px !important;
+  }
+
+  .genere {
+    width: 30rem !important;
+  }
+
+  .mood div {
+    margin-bottom: 10px;
+  }
+
+  .visbility {
+    visibility: hidden !important;
+  }
+
+  .progress-before::after {
+    content: "";
+  }
+
+  .progress-before::before {
+    content: "";
+  }
+  .comp-speakers {
+    position: absolute;
+    top: 24px;
+    margin-left: 17%;
+  }
+
+  .fa-shuffle {
+    position: absolute;
+    top: 30px;
+    left: 39%;
+    font-size: 1rem;
+  }
+
+  .fa-backward-step {
+    position: absolute;
+    top: 30px;
+    left: 46%;
+    font-size: 1rem;
+  }
+
+  .fa-circle-pause {
+    position: absolute;
+    top: 25px;
+    left: 53%;
+    font-size: 1.5rem;
+  }
+
+  .fa-forward-step {
+    position: absolute;
+    top: 30px;
+    right: 35%;
+    font: 1rem;
+  }
+
+  .fa-repeat {
+    position: absolute;
+    top: 30px;
+    right: 28%;
+    font-size: 1rem;
+  }
+
+  .fa-volume-high {
+    position: absolute;
+    top: 30px;
+    margin-left: 25%;
+    font-size: 0.8rem;
+  }
+}

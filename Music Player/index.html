@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/164ab0d69f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <title>Static Template</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="" width="40px" height="40px"
+            class="d-inline-block align-text-top">
+          <a class="navbar-brand text-light" href="#">Ninja Studio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Hamburger Bar  Dropdown-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item  ms-5">
+                <a class="nav-link active text-light" aria-current="page" href="#">Favourites</a>
+              </li>
+  
+            </ul>
+  
+            <form class="d-flex" style="width: 400px;" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn search-icon" type="submit">
+                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+              </button>
+              <button class="btn search-mic" type="submit">
+                <i class="fa-solid fa-microphone text-secondary"></i>
+              </button>
+            </form>
+            
+          <button type="button" class="btn btn-primary position-relative notification">
+            <i class="fa-solid fa-bell text-light"></i>
+            <span
+              class="position-absolute top-5 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notification-dot mt-1">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+  
+          <img class="profile-image me-3" src="https://drive.google.com/uc?export=view&id=1MyplEUd2mXEAyQSnZPq5vC2PaDLLzbKD" height="40px"
+            width="40px" style="border-radius: 50%;">
+        </div>
+  
+        </div>
+  
+  
+        
+      </nav>
+    </header>
+    <main>
+      <!-- Highlight Songs Container -->
+      <div class="container highlight m-4 ms-5">
+        <div class="row">
+          <div class="col-md-3 col-lg-4 col-xs-12 mb-3 g-0">
+            <img src="https://i.ytimg.com/vi/1U1OSYx0DgI/maxresdefault.jpg" class="img-style img-on-hover">
+          </div>
+          <div class="col-md-3 col-lg-4 col-xs-12 mb-3 g-0">
+            <img src="https://i.ytimg.com/vi/v9d572fBEE4/maxresdefault.jpg" class="img-style img-on-hover">
+          </div>
+          <div class="col-md-3 col-lg-4 col-xs-12 mb-3 g-0">
+            <img src="https://i.ytimg.com/vi/I4uOpk-mgYU/maxresdefault.jpg" class="img-style img-on-hover">
+          </div>
+  
+        </div>
+  
+      </div>
+      <!--Latest Releases-->
+      <div class="container m-4">
+        <h6 class="heading">Latest Release</h6>
+        <div class="row lg-12">
+          <div class="col-sm-6">
+            <div class="card mb-3 pop-image" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="https://i.scdn.co/image/ab67616d0000b2733680f6de3061ef5808bfa043"
+                    class="img-fluid song-image" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title text-light small">Onism</h5>
+                    <!-- <p class="card-text">AUG 11,2017</p> -->
+                    <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+                  </div>
+                  <div class="card-img-overlay pop-text-overlay">
+                    <a href="#music-player">
+                      <p class="card-text latest-release-hover"><i class="fa-solid fa-pause fs-2"></i></p>
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-ellipsis text-light"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <i class="fa-solid fa-play"></i> Play Now
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-plus"></i> Add To Queue
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-heart-circle-plus"></i> Add To Favourites
+                      </li>
+                      <hr>
+                      <li><i class="fa-solid fa-circle-info"></i> Get Info
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mb-3 pop-image" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="https://i.scdn.co/image/ab67616d0000b2737c84560416a5b29696023b26"
+                    class="img-fluid song-image" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title text-light small">Chivalry is Dead</h5>
+                    <!-- <p class="card-text">AUG 11,2017</p> -->
+                    <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+                  </div>
+                  <div class="card-img-overlay pop-text-overlay">
+                    <a href="#music-player">
+                      <p class="card-text latest-release-hover"><i class="fa-solid fa-pause fs-2"></i></p>
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-ellipsis text-light"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <i class="fa-solid fa-play"></i> Play Now
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-plus"></i> Add To Queue
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-heart-circle-plus"></i> Add To Favourites
+                      </li>
+                      <hr>
+                      <li><i class="fa-solid fa-circle-info"></i> Get Info
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row lg-12">
+          <div class="col-sm-6">
+            <div class="card mb-3 pop-image" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="https://a10.gaanacdn.com/images/albums/36/4461836/crop_480x480_4461836.jpg"
+                    class="img-fluid song-image" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title text-light small">Jannat Ve</h5>
+                    <!-- <p class="card-text">AUG 11,2017</p> -->
+                    <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+                  </div>
+                  <div class="card-img-overlay pop-text-overlay">
+                    <a href="#music-player">
+                      <p class="card-text latest-release-hover"><i class="fa-solid fa-pause fs-2"></i></p>
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-ellipsis text-light"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <i class="fa-solid fa-play"></i> Play Now
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-plus"></i> Add To Queue
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-heart-circle-plus"></i> Add To Favourites
+                      </li>
+                      <hr>
+                      <li><i class="fa-solid fa-circle-info"></i> Get Info
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mb-3 pop-image" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="https://images.hungama.com/c/1/350/54d/86794382/86794382_300x300.jpg"
+                    class="img-fluid song-image" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title text-light small">Bhhol Bhulaiyaa 2 Title Track</h5>
+                    <!-- <p class="card-text">AUG 11,2017</p> -->
+                    <p class="card-text"><small class="text-light">AUG 11,2017</small></p>
+                  </div>
+                  <div class="card-img-overlay pop-text-overlay">
+                    <a href="#music-player">
+                      <p class="card-text latest-release-hover"><i class="fa-solid fa-pause fs-2"></i></p>
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="btn-group">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-ellipsis text-light"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <i class="fa-solid fa-play"></i> Play Now
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-plus"></i> Add To Queue
+                      </li>
+                      <hr>
+                      <li>
+                        <i class="fa-solid fa-heart-circle-plus"></i> Add To Favourites
+                      </li>
+                      <hr>
+                      <li><i class="fa-solid fa-circle-info"></i> Get Info
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <!--Popular Artists-->
+      <div class="container ms-4">
+        <h6 class="heading">Popular Artists</h6>
+        <div class="row popular-artist mt-3">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/91UGgz5OKLL.jpg"
+                class="card-img-top artist-image" height="120px" width="120px">
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p></a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Ed Sheeran</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+              <img
+                src="https://s1.ticketm.net/dam/a/742/52406a76-80d9-47a9-8c95-fabaa7a9d742_1531071_TABLET_LANDSCAPE_LARGE_16_9.jpg"
+                class="card-img-top artist-image" height="120px" width="120px">
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p></a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Coldplay</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+              <img
+                src="https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"
+                class="card-img-top artist-image" height="120px" width="120px">
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p></a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Arijeet Singh</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+              <img src="https://static.toiimg.com/photo/81450030.cms" 
+                class="card-img-top artist-image" height="120px" width="120px"></a>
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p>
+                    </a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Shreya Ghosal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+                <img src="https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg" 
+                class="card-img-top artist-image" height="120px" width="120px"></a>
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p>
+                    </a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Justin Bieber</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-center img-on-hover pop-image" style="width: 8.5em;">
+             
+                <img src="https://wikibio.in/wp-content/uploads/2019/04/Atif-Aslam.jpg" 
+                class="card-img-top artist-image" height="120px"
+                width="120px"></a>
+                <div class="card-img-overlay pop-text-overlay">
+                  <a href="MusicPlayer-Page2.html">
+                    <p class="card-text card-text-genere"><i class="fa-solid fa-play fs-3"></i></p>
+                  </a>
+                </div>
+              <div class="card-body">
+                <p class="card-text text-light small" style="margin-top: -10px;">Atif Aslam</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <!--Genere-->
+      <div class="container m-4 mt-0 ms-5">
+        <div class="row genere">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+            <img
+              src="https://play-lh.googleusercontent.com/pDkwYK5CPFWhvhW8hST745iqeVtrV6a7IJ-YyKyV4snypmCwtmIU34UHIcO1hUBfS2M"
+              height="100px" width="100px" style="border-radius: 0px; opacity:1;">
+  
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img
+                src="https://www.rd.com/wp-content/uploads/2020/12/GettyImages-155278338-e1607021370174.jpg?fit=700,700"
+                class="card-img " alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Love</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img src="https://i.pinimg.com/736x/da/ff/62/daff62d506abbab0418d903ee6aad344.jpg" class="card-img "
+                alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Retro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKylpwLPsNrIYKqaVmZX_4nb6pbRfoKbG4WA&usqp=CAU"
+                class="card-img " alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Chill</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img
+                src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ya291dCUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                class="card-img " alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Workout</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img
+                src="https://images.saymedia-content.com/.image/t_share/MTc0NDg3MzAyOTgxMzYzMzM0/100-best-rock-songs-of-the-80s.jpg"
+                class="card-img " alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Rock</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6" style="flex-grow: 1;">
+            <div class="card text-center" style="width: 7rem; background-color: #12193e;">
+              <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/E645/production/_113294985_composite.jpg"
+                class="card-img " alt="Party" height="85px" width="85px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Pop</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <!--Mood-->
+      <div class="container m-4">
+        <div class="row mood">
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-light img-on-hover" style="width: 18rem;">
+              <img
+                src="https://media.istockphoto.com/photos/dancing-friends-picture-id501387734?k=20&m=501387734&s=612x612&w=0&h=1mli5b7kpDg428fFZfsDPJ9dyVHsWsGK-EVYZUGWHpI="
+                class="card-img" alt="Party" height="150px" width="120px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Party</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-light img-on-hover" style="width: 18rem;">
+              <img src="https://i.ytimg.com/vi/DBW-Rq4iEhQ/maxresdefault.jpg" class="card-img img-on-hover" alt="Party"
+                height="150px" width="120px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Electronic</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-light img-on-hover" style="width: 18rem;">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/friends-in-a-car-1555269228.jpg?crop=0.537xw:0.805xh;0.253xw,0.154xh&resize=640:*"
+                class="card-img" alt="Party" height="150px" width="120px">
+              <div class="card-img-overlay">
+                <p class="card-text card-text-genere">Road Trip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Latest English-->
+      <div class="container m-4">
+        <h6 class="heading">Latest English</h6>
+        <div class="row latest">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/91UGgz5OKLL.jpg" class="card-img-top"
+                height="120px" width="120px">
+              <div class="card-body">
+                <h5 class="card-text text-light small" style="margin-top: -10px;">Ed Sheeran</h5>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img
+                src="https://s1.ticketm.net/dam/a/742/52406a76-80d9-47a9-8c95-fabaa7a9d742_1531071_TABLET_LANDSCAPE_LARGE_16_9.jpg"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Coldplay</h6>
+                <p class="card-text small"><small class="text-light small">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b" class="card-img-top"
+                height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Eminem</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img
+                src="https://static.onecms.io/wp-content/uploads/sites/9/2018/02/cooking-with-marshmello-ft-blog0218.jpg"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Marshmellow</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://geo-media.beatport.com/image_size/590x404/e2199883-30c4-44b9-8248-428da130287a.jpg"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">David Guetta</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://variety.com/wp-content/uploads/2022/04/Justin-Bieber-1.jpg?w=1000" class="card-img-top"
+                height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Justin Bieber</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <!--Latest Hindi-->
+      <div class="container m-4">
+        <h6 class="heading">Latest Hindi</h6>
+        <div class="row latest">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img
+                src="https://www.iwmbuzz.com/wp-content/uploads/2019/09/darshan-raval-is-the-only-guy-we-are-crushing-on-2.jpg"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h5 class="card-text text-light small" style="margin-top: -10px;">Darshan Raval</h5>
+                <p class="card-tex small"><small class="text-light">AUG 11,2017</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://www.pinkvilla.com/imageresize/dhvani-interview.jpg?width=752&format=webp&t=pvorg"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Dhvani Bhanushali</h6>
+                <p class="card-text small"><small class="text-light small">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img
+                src="https://filmfare.wwmindia.com/thumb/content/2022/apr/arijitsingh11650885572.jpg?width=1200&height=900"
+                class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Arijeet Singh</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://static.toiimg.com/photo/81450030.cms" class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Shreya Ghosal</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://static.toiimg.com/photo/61257547.cms" class="card-img-top" height="120px" width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Sonu Nigam</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card text-start img-on-hover" style="width: 8.5em;">
+              <img src="https://wikibio.in/wp-content/uploads/2019/04/Atif-Aslam.jpg" class="card-img-top" height="120px"
+                width="120px">
+              <div class="card-body">
+                <h6 class="card-text text-light small" style="margin-top: -10px;">Atif Aslam</h6>
+                <p class="card-text small"><small class="text-light">AUG 11,2017</small></p>
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </main>
+    <aside>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 style="color: white;">Queue</h3>
+          </div>
+          <div class="col-lg-6">
+            <div class="btn-group">
+              <button class="btn btn-sm dropdown-toggle" type="button" style="color: skyblue;" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Queue
+              </button>
+              <ul class="dropdown-menu aside-dropdown-menu">
+                <li>Playlists</li>
+                <hr>
+                <li>Favourite Songs</li>
+              </ul>
+            </div>
+          </div>
+          <ol class="mt-5 ms-4 small text-secondary" type="1" style="list-style-type: decimal-leading-zero;">
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e5162939d441f51680eb481f"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Mirage</h6>
+                      <p class="card-text"><small class="text-secondary">Else</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://images.hungama.com/c/1/2aa/ae8/16565435/16565435_300x300.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Worry About Us</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Rosie Lowe</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Ed Sheeran</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Perfect</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn heart-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Babycoverart.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">Baby</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xs-12">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://i1.sndcdn.com/artworks-000427619088-t46ds0-t500x500.jpg"
+                      class="img-fluid aside-card-image ms-2" height="60px" width="60px"
+                      style="border: 0px;" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body ps-0">
+                      <h6 class="card-title text-light mb-0"
+                      style="font-size: 0.9rem;">One Time</h6>
+                      <!-- <p class="card-text">AUG 11,2017</p> -->
+                      <p class="card-text"><small class="text-secondary">Justin Bieber</small></p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <i class="fa-solid fa-square-heart"></i>
+                    <div class="btn-group">
+                      <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+           
+            
+          </ol>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="container-fluid" id="music-player">
+        <div class="row music-player">
+          <div class="col-sm-3 col-md-4 col-xs-2">
+            <div class="card mb-3" style="max-width: 540px; background-color: #282729;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="https://i.scdn.co/image/ab67616d0000b2733680f6de3061ef5808bfa043"
+                     alt="..." class="ms-5 mt-2 mb-1" height="65px" width="65px">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body ms-0">
+                    <h6 class="text-truncate text-light small player-title">Onism by John Lennon</h6>
+                    <!-- <p class="card-text">AUG 11,2017</p> -->
+                    <p class="card-text small"><small class="text-light text-truncate">John Lennon</small></p>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="btn-group">
+                    <button class="btn" type="button" aria-expanded="false">
+                      <i class="fa-regular fa-heart text-light"></i>
+                    </button>
+                    <button class="btn" type="button" aria-expanded="false">
+                      <i class="fa-solid fa-ban text-light"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 player col-xs-4">
+          <i class="fa-solid fa-shuffle text-secondary"></i>
+          <i class="fa-solid fa-backward-step text-light"></i>
+          <i class="fa-regular fa-circle-pause text-light"></i>
+          <i class="fa-solid fa-forward-step text-light"></i>
+          <i class="fa-solid fa-repeat text-secondary"></i>
+          <div class="progress visbility progress-before" style="margin-top: 9%; height: 0.5rem; background-color: black">
+            <div class="progress-bar w-25 bg-success" role="progressbar"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            
+          </div>
+          <i class="fa-solid fa-circle progress-circle text-light visbility"></i>
+        </div>
+        <div class="col-sm-4 volume-div col-xs-4">
+          <i class="fa-solid fa-list-check text-secondary visbility"></i>
+          <img src="https://drive.google.com/uc?export=view&id=1feEIU6W74huIeWGVFNdOXRDQCr6AMBNy" class="comp-speakers visbility"
+          height="25px" width="25px">
+          <i class="fa-solid fa-volume-high text-light"></i>
+          <div class="progress sound-bar" style="height: 0.3rem; width: 8rem; background-color: black">
+            <div class="progress-bar w-25 bg-success" role="progressbar"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <i class="fa-solid fa-circle sound-circle text-light"></i>
+          <i class="fa-solid fa-up-right-and-down-left-from-center text-secondary visbility"></i>
+        </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </body>
+
+ 
+</html>
